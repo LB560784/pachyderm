@@ -45,7 +45,7 @@ type GlobalConfiguration struct {
 	EtcdPrefix           string `env:"ETCD_PREFIX,default="`
 	DeploymentID         string `env:"CLUSTER_DEPLOYMENT_ID,default="`
 	EnterpriseEtcdPrefix string `env:"PACHYDERM_ENTERPRISE_ETCD_PREFIX,default=pachyderm_enterprise"`
-	Metrics              bool   `env:"METRICS,default=true"`
+	Metrics              bool   `env:"METRICS,default=false"`
 	MetricsEndpoint      string `env:"METRICS_ENDPOINT,default="`
 
 	// SessionDurationMinutes it how long auth tokens are valid for, defaults to 30 days (30 * 24 * 60)
